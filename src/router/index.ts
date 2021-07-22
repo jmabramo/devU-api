@@ -3,6 +3,7 @@ import swaggerUi from 'swagger-ui-express'
 
 import swagger from '../utils/swagger.utils'
 
+import codeAssignment from './codeAssignments.router'
 import userCourse from './userCourses.router'
 import assignments from './assignments.router'
 import courses from './courses.router'
@@ -21,6 +22,7 @@ const Router = express.Router()
 Router.use('/assignments', isAuthorized, assignments)
 Router.use('/courses', isAuthorized, courses)
 Router.use('/user-courses', isAuthorized, userCourse)
+Router.use('/code-assignment', isAuthorized, codeAssignment)
 Router.use('/docs', swaggerUi.serve, swaggerUi.setup(swagger))
 Router.use('/submissions', isAuthorized, submissions)
 Router.use('/users', isAuthorized, users)
