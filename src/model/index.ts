@@ -4,7 +4,7 @@ import SubmissionModel from './submissions.model'
 import UserModel from './users.model'
 import UserCourseModel from './userCourses.model'
 import SubmissionProblemScoreModel from './submissionProblemScores.model'
-import SubmissionScoreModel from './submissionScores.model'
+import SubmissionScoreModel from './submissionScore.model'
 
 type Models =
   | AssignmentModel
